@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Caveat:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Fjalla+One&family=Poor+Story&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+    justify-content: center;
+    line-height: 1.6;
+    margin: 0;
+}
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+span{
+    color: rgb(196, 20, 20);
+}
+
+form{
+    width: 50%;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 32px;
+}
+#searchBox{
+    width: 90%;
+    height: 99%;
+    border: none;
+    background: transparent;
+    margin-left: 10px;
+    padding: 2px;
+    font-size: 1.2rem;
+}
+#btn{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+#searchicon{
+    width: 20px;
+    height: 20px;
+}
+#searchoutput{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: 20px;
+    margin-top: 50px;
+}
+#showMore{
+    font-size: 1.2rem;
+    font-weight: 800;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+    text-align: center;
+    font-family: 'Poor Story', system-ui;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 50px;
+}
+
+#showMore:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#showMore:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.searchResult {
+    margin-bottom: 60px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(19, 19, 19, 0.582);
+    overflow: hidden;
+  }
+  
+.searchResult:hover img {
+    transform: scale(1.05);
+  }
+  
+.searchResult img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+.searchResult a {
+    padding: 10px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+.searchResult:hover a {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  @media screen and (max-width : 500px) {
+    .searchResult{
+        width: 100%;
+    }
+  }
+  @media screen and (min-width : 501px) and (max-width : 800px){
+    .searchResult{
+        width: 40%;
+    }
+  }
